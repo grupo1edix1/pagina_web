@@ -14,13 +14,18 @@
 <body>
     <header class="headerform">
         <nav>
-            <a href="index.html" class="link">Home</a>
-            <a href="#" class="link">Quienes somos</a>
-            <a href="#" class="link">Áreas de actuación</a>
-            <a href="#" class="link">Noticias</a>
-            <a href="#" class="link">Publicaciones</a>
-            <a href="#" class="link">Localización</a>
-            <a href="#" class="link">Contacto</a>
+            <ul class="nav">
+                <li><a href="index.html" class="link">Home</a></li>
+                <li><a href="/Quienes_somos.html" class="link">Quienes somos</a></li>
+                <li><a href="#" class="link">Más</a>
+                    <ul>
+                        <li><a href="#" class="link">Noticias</a></li>
+                        <li><a href="/Area_actuacion.html" class="link">Area de actución</a></li>
+                        <li><a href="#" class="link">Localización</a></li>
+                        <li><a href="/formulario2.html" class="link">Contacto</a></li>
+                    </ul>
+                </li>
+            </ul>
         </nav>
         <section class="textos-header">
             <h1> Contacta con nosotros</h1>
@@ -37,76 +42,83 @@
         <p class="form__paragraph">¿Aún no estás registrado? <a href="#" class="form__link">Entra aqui</a></p>
         <div class="form__container">
             <div class="form__group">
-                <input type="text" id="name" class="form__input" placeholder=" " autofocus>
+                <input type="text" id="name" class="form__input" autofocus>
                 <label for="name" class="form__label">Nombre:</label>
                 <span class="form__line"></span>
             </div>
-                <div class="form__group">
-                    <input type="text" id="apellidos" class="form__input" placeholder=" " required> 
-                    <label for="apellidos" class="form__label">Apellidos:</label>
-                    <span class="form__line"></span>
-                </div>
-                <div class="form__group">
-                    <input type="text" id="user" class="form__input" placeholder=" " required>
-                    <label for="user" class="form__label">Usuario:</label>
-                    <span class="form__line"></span>
-                </div>
-                    <div class="form__group">
-                        <input type="text" id="password" class="form__input" placeholder=" " required>
-                        <label for="password" class="form__label">Contraseña:</label>
-                        <span class="form__line"></span>
-                    </div>
-                <div class="form__group">
-                    <input type="text" id="email" class="form__input" placeholder=" " required>
-                    <label for="email" class="form__label">Email:</label>
-                    <span class="form__line"></span>
-                </div>
-                <div class="form__group">
-                    <input type="text" id="tipoobra" class="form__input" placeholder=" " required>
-                    <label for="tipoobra" class="form__label">Tipo de Obra:</label>
-                    <span class="form__line"></span>
-                </div>
-                <div class="form__group">
-                        <input type="text" id="horacontacto" class="form__input" placeholder=" " required>
-                        <label for="horacontacto" class="form__label">Hora contacto:</label>
-                        <span class="form__line"></span>
-                </div>
-                <div class="form__group">
-                    <input type="text" id="telefono" class="form__input" placeholder=" " required>
-                    <label for="telefono" class="form__label">Teléfono:</label>
-                    <span class="form__line"></span>
-                </div>
-                    <input type="submit" class="form__submit" value="Entrar">
+            <div class="form__group">
+                <input type="text" id="apellidos" class="form__input" placeholder=" " required>
+                <label for="apellidos" class="form__label">Apellidos:</label>
+                <span class="form__line"></span>
+            </div>
+            <div class="form__group">
+                <input type="text" id="user" class="form__input" placeholder=" " required>
+                <label for="user" class="form__label">Usuario:</label>
+                <span class="form__line"></span>
+            </div>
+            <div class="form__group">
+                <input type="text" id="password" class="form__input" placeholder=" " required>
+                <label for="password" class="form__label">Contraseña:</label>
+                <span class="form__line"></span>
+            </div>
+            <div class="form__group">
+                <input type="text" id="email" class="form__input" placeholder=" " required>
+                <label for="email" class="form__label">Email:</label>
+                <span class="form__line"></span>
+            </div>
+            <div class="form__group">
+                <input type="text" id="tipoobra" class="form__input" placeholder=" " required>
+                <label for="tipoobra" class="form__label">Tipo de Obra:</label>
+                <span class="form__line"></span>
+            </div>
+            <div class="form__group">
+                <input type="text" id="Teléfono" class="form__input" placeholder=" " required>
+                <label for="Teléfono" class="form__label">Teléfono:</label>
+                <span class="form__line"></span>
+            </div>
+            <div class="form__group">
+                <input type="text" id="horacontacto" class="form__input" placeholder=" " required>
+                <label for="horacontacto" class="form__label">Hora de contacto:</label>
+                <span class="form__line"></span>
+            </div>
+            <div class="form__group">
+               <div>
+                <input name="intereses" type="radio" value="rbipeliculas" />Tarde
+                <input name="intereses" type="radio" value="rbilibros" />Mañana
+               </div>
+            </div>
+            <input type="submit" class="form__submit" value="Entrar">
         </div>
     </form>
-    <footer> 
+    <footer>
         <div class="socialmedia">
             <p class="socialmedia__legend">Siguenos en:</p>
-            <i class='socialmedia__icon bx bxl-facebook-circle' ></i>
-            <i class='socialmedia__icon bx bxl-linkedin-square' ></i>
-            <i class='socialmedia__icon bx bxl-twitter' ></i>
-            <i class='socialmedia__icon bx bxl-instagram-alt' ></i>
-            <i class='socialmedia__icon bx bxl-github' ></i>
+            <i class='socialmedia__icon bx bxl-facebook-circle'></i>
+            <i class='socialmedia__icon bx bxl-linkedin-square'></i>
+            <i class='socialmedia__icon bx bxl-twitter'></i>
+            <i class='socialmedia__icon bx bxl-instagram-alt'></i>
+            <i class='socialmedia__icon bx bxl-github'></i>
         </div>
-    </section>
-</div>
-<div class="contact">
-    <div class="item__contact">
-       <i class='bx bx-copyright contact__icon' ></i>
-       <h3 class="contact__title">Grupo5</h3>
-    </div>
-    <div class="item__contact">
-       <i class='bx bx-mail-send contact__icon' ></i>
-       <h3 class="contact__title">grupo5@gmail.com</h3>
-    </div>
-    <div class="item__contact">
-       <i class='bx bxs-edit-location contact__icon' ></i>
-       <h3 class="contact__title">Calle buena nota numº 8 Madrid </h3>
-    </div>
-    <div class="item__contact">
-       <i class='bx bxs-chat contact__icon' ></i>
-       <h3 class="contact__title">Contáctanos ahora</h3>
-    </div>
-</footer>
+        </section>
+        </div>
+        <div class="contact">
+            <div class="item__contact">
+                <i class='bx bx-copyright contact__icon'></i>
+                <h3 class="contact__title">Grupo5</h3>
+            </div>
+            <div class="item__contact">
+                <i class='bx bx-mail-send contact__icon'></i>
+                <h3 class="contact__title">grupo5@gmail.com</h3>
+            </div>
+            <div class="item__contact">
+                <i class='bx bxs-edit-location contact__icon'></i>
+                <h3 class="contact__title">Calle buena nota numº 8 Madrid </h3>
+            </div>
+            <div class="item__contact">
+                <i class='bx bxs-chat contact__icon'></i>
+                <h3 class="contact__title">Contáctanos ahora</h3>
+            </div>
+    </footer>
 </body>
+
 </html>

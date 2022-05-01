@@ -73,19 +73,44 @@ header {
     position: relative;
 }
 
-nav{
-    text-align: right;
-    padding: 30px 50px 0 0;
+#menu{
+    margin:auto;
+}
+ul li{
+    list-style: none;
 }
 
-nav > a{
-    color: #fff;
+.nav li a{
+    color: white;
     font-weight: 300;
     text-decoration: none;
     margin-right: 10px;
+    padding: 10px 15px;
+    display: block;
+}
+.nav li a:hover{
+    background-color: #351450;
+}
+.nav > li{
+    float:left;
+}
+.nav li ul{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+.nav li:hover > ul{
+    display: block;
+}
+.nav li ul li {
+    position: relative;
+}
+.nav li ul li ul{
+    right: -140px;
+    top: 0px;
 }
 
-nav > a:hover{
+.nav > a:hover{
     text-decoration: underline;
 }
 
@@ -298,11 +323,6 @@ footer {
 
   }
 
-  footer .contact{
-      
-    
-  }
-
   .item__contact{
     padding: 15px;
     font-size: 1em;
@@ -324,7 +344,7 @@ footer {
     margin-bottom: 100px;
     width: 50%;
     max-width: 400px;
-    min-width: 200px
+    min-width: 200px;
     padding: 4.5em 3em;
     border-radius: 10px;
     box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30% );
@@ -532,4 +552,4 @@ footer {
 }
 
 
-  }
+  
