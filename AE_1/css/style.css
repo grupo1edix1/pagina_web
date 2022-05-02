@@ -78,6 +78,7 @@ header {
 }
 ul li{
     list-style: none;
+    
 }
 
 .nav li a{
@@ -171,6 +172,7 @@ header .textos-header{
 .contenedor-sobre-nosotros {
     display: flex;
     justify-content: space-evenly;
+    padding: 20px;
 }
 
 .imagen-about-us{
@@ -179,6 +181,10 @@ header .textos-header{
 
 .sobre-nosotros .contenido-textos{
     width: 48%;
+}
+
+.contenido-textos{
+    margin-left: 15px;
 }
 
 .contenido-textos h3{
@@ -433,12 +439,41 @@ footer {
     transform: left bottom;
     transition: transform .4s;
 }
+.check {
+    padding: 30px 0;
+}
+
+.check input[type=checkbox]{
+    margin: 10px 5px;
+}
+
+.radioform{
+    padding: 30px 0;
+}
+
+.radioform input[type=radio]{
+    margin: 0 10px;
+}
+
+textarea{
+    margin: 30px 0;
+}
 
 .form__input:focus ~ .form__line, .form__input:not(:placeholder-shown) ~ .form__line{
     transform: scale(1);
 }
 
-@media screen and (max-width:1000px){
+/*quienes-somos*/
+
+.imagen-quien{
+    width: 60%;
+}
+
+.contenido-textos h2{
+    text-decoration: underline solid;
+}
+
+@media (max-width:1000px) and (min-width: 601px){
     .form__title{
         font-size: 1.8rem;
     }
@@ -520,11 +555,10 @@ footer {
 
     .cards{   
         width: 100%;
+        margin: 0;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
         padding-bottom: 50px;
          
         color: rgb(255, 255, 255);
@@ -537,19 +571,128 @@ footer {
         overflow: hidden;
         position: relative;
         cursor: pointer;
+        display: flex;
         background-color: #454546;
         box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
         
     }
 
+    .card p{
+        margin-right: 20px;
+    }
+}
+
+    @media screen and (max-width:600px){
+
+        .form__title{
+            font-size: 1.8rem;
+        }
+    
+        .textos-header h1{
+            font-size: 40px;
+            color: #fff;
+            padding: 10px;
+        }
+        
+        
+        .textos-header h2{
+            font-size: 20px;
+            font-weight: 300;
+            color: #fff;
+            padding: 10px;
+        }
+    
+        .contenedor {
+            padding: 10px 0;
+            width: 100%;
+            max-width: 1000px;
+            margin: auto;
+            overflow: hidden;
+        }
+    
+        .contenedor-sobre-nosotros {
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .sobre-nosotros .contenido-textos{
+            width: 80%;
+            padding: 20px 0;
+        }
+    
+        #contacta a{
+            font-size: 15px;
+            text-align: center;
+            display: block;
+            padding: 10px 20px;
+            background: #f1eeee; color: #351450; 
+            font-weight: bold;
+            line-height: 20px; 
+            border-radius: 20px; 
+            text-decoration: none;
+            text-shadow: 1px 1px #0000006b;
+            box-shadow: 6px 6px rgba(0, 0, 0, 0.5);
+        }
+    
+        .contenido-textos p {
+            padding: 0px 0px 30px 15px;
+            font-weight: 500;
+            text-align: justify;
+        }
+    
+        .contenedor2 {
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        .galeria-port{
+            width: 80%;
+            padding-left: 1vw;
+            padding-right: 1vw;
+        }
+    
+        .imagen-port > img{
+            width: 100%;
+            display: block;
+        }
+    
+        .cards{   
+            width: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            padding-bottom: 50px;
+             
+            color: rgb(255, 255, 255);
+            box-shadow: 0 0 6px 0 rgba(0, 0, 0, .0);
+         }
+    
+         .card{
+            width: 100%;
+            margin: 20px 0;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            background-color: #454546;
+            box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+            
+        }
+    
+        .card p{
+            margin-right: 20px;
+        }
     
 
 
-
-
-
-
-}
+    }
 
 
   
