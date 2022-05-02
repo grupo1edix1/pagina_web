@@ -16,17 +16,16 @@
         <nav>
             <ul class="nav">
                 <li><a href="index.html" class="link">Home</a></li>
-                <li><a href="/Quienes_somos.html" class="link">Quienes somos</a></li>
+                <li><a href="/quienes_somos.html" class="link">Quiénes somos</a></li>
                 <li><a href="#" class="link">Más</a>
                     <ul>
                         <li><a href="#" class="link">Noticias</a></li>
-                        <li><a href="/Area_actuacion.html" class="link">Area de actución</a></li>
+                        <li><a href="/area_actuacion.html" class="link">Área de actuación</a></li>
                         <li><a href="#" class="link">Localización</a></li>
                         <li><a href="/formulario2.html" class="link">Contacto</a></li>
                     </ul>
                 </li>
             </ul>
-        </nav>
         <section class="textos-header">
             <h1> Contacta con nosotros</h1>
             <h2>Presupuestos a medida</h2>
@@ -57,7 +56,7 @@
                 <span class="form__line"></span>
             </div>
             <div class="form__group">
-                <input type="text" id="password" class="form__input" placeholder=" " required>
+                <input type="password" id="password" class="form__input" placeholder=" " required>
                 <label for="password" class="form__label">Contraseña:</label>
                 <span class="form__line"></span>
             </div>
@@ -77,18 +76,30 @@
                 <span class="form__line"></span>
             </div>
             <div class="form__group">
-                <input type="text" id="horacontacto" class="form__input" placeholder=" " required>
                 <label for="horacontacto" class="form__label">Hora de contacto:</label>
-                <span class="form__line"></span>
+                <div class="form__group">
+                    <div class="radioform">
+                     <input name="hora" type="radio" value="rtarde" />Tarde
+                     <input name="hora" type="radio" value="rmanana" />Mañana
+                    </div>
             </div>
             <div class="form__group">
-               <div>
-                <input name="intereses" type="radio" value="rbipeliculas" />Tarde
-                <input name="intereses" type="radio" value="rbilibros" />Mañana
-               </div>
+                <label for="motivo" class="form__label">Motivo de contacto:</label>
+                <div class="check">
+                    <input type="checkbox" name="motivo" value="M" checked/>Construcción<br />	
+                    <input type="checkbox" name="motivo" value="L" checked/>Reforma<br />	
+                    <input type="checkbox" name="motivo" value="D" />Domótica<br />	
+                    <input type="checkbox" name="motivo" value="V" />Otros<br />
+                </div>
+            </div>
+                <div class="form__group">
+                    <label for="motivo" class="form__label">Motivo de contacto:</label>
+                    <textarea style= "resize: none;" rows="10" cols="20%" name="observaciones" maxlength="100"></textarea>
+                </div>
             </div>
             <input type="submit" class="form__submit" value="Entrar">
         </div>
+        
     </form>
     <footer>
         <div class="socialmedia">
